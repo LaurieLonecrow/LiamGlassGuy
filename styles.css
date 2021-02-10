@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+.load {
+
+}
+
+.baselayer {
+  padding: 2% 0;
+position: absolute;
+}
+
+.layer {
+  padding: 2% 0;
+
+position: absolute;
+}
+
+.pSection {
+  padding: 3% 27%;
+  height: 550px;
+  position: static;
+  background-color: #00FFFF;
+}
+
+.pContent {
+  position: relative;
+  background-color: #000000;
+}
+
+.gallery {
+  padding-top: 5em;
+}
+
+.skewElem {
+  max-width: 25%;
+  height: auto;
+  padding: 2em;
+}
