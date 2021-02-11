@@ -1,4 +1,10 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
 
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -8,6 +14,10 @@ gsap.fromTo(".layer",
 gsap.fromTo(".baselayer",
 {opacity:0, transform: "scale(.1)"},
 {opacity:1, transform: "scale(1.2)", duration: 2, ease: "bounce"});
+gsap.fromTo(".main-nav",
+{opacity:0, transform: "scale(.1)"},
+{opacity:1, transform: "scale(1.2)", delay: 2, duration: 1});
+
 
 gsap.fromTo(".bright",
   {webkitFilter: "brightness(1)", filter: "brightness(1)" },
@@ -39,10 +49,14 @@ var tl = gsap.timeline({
   scrollTrigger:{
   trigger: ".panel",
   start: "top top",
-  scrub: true,
+  end: '+=3000px',
+  scrub: 1,
   pin: true,
   pinSpacing: false,
 }});
+
+tl.fromTo(".pContent", {yPercent: 0},{
+  yPercent: -60, ease: "circ"});
 
 //const layers = gsap.utils.toArray(".layer");
 //layers.forEach(layer => {
@@ -50,6 +64,3 @@ var tl = gsap.timeline({
 //{opacity: 0, transform: "scale(5)"},0)});
 //tl.fromTo(".baselayer", {opacity: 1.0, transform: "scale(1)"},
 //{opacity: 0, transform: "scale(5)"},0);
-
-tl.fromTo(".pContent", {yPercent: 0},{
-  yPercent: -60});

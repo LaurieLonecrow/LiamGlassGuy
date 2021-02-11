@@ -1,9 +1,86 @@
 body {
   margin: 0;
+  font-family: 'Ranchers', cursive;
+  font-family: 'Baloo Da 2', cursive;
 }
 
-.load {
+/* Navbar */
 
+.main-nav {
+  vertical-align: middle;
+  display: inline-block;
+  width:10vh;
+  height:45px;
+  position:fixed;
+  background: transparent;
+  text-decoration: none;
+  -webkit-transform-origin: left top;
+  /*-webkit-transform:rotate(-90deg) translateX(-100%);*/
+  z-index: 50;
+  opacity: 1;
+}
+
+.main-nav-guy img:hover {
+  transform: rotate(-15deg) translate(-10%);
+}
+
+ul.nav li {
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 1rem;
+  float: left;
+  list-style-type: none;
+  height:100%;
+  line-height:45px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "Ranchers", cursive;
+}
+
+
+/* PopUp Menu */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 18px;
+  text-decoration: none;
+  font-size: 80px;
+  font-family: "Ranchers", cursive;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
 }
 
 .baselayer {
@@ -26,7 +103,7 @@ position: absolute;
 
 .pContent {
   position: relative;
-  background-color: #000000;
+  background-color: #00FFFF;
 }
 
 .gallery {
