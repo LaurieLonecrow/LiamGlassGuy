@@ -47,16 +47,26 @@ stagger: .5,
 
 var tl = gsap.timeline({
   scrollTrigger:{
-  trigger: ".panel",
+  trigger: ".pSection",
   start: "top top",
-  end: '+=3000px',
   scrub: 1,
   pin: true,
   pinSpacing: false,
 }});
 
 tl.fromTo(".pContent", {yPercent: 0},{
-  yPercent: -60, ease: "circ"});
+  yPercent: -10, ease: "circ"});
+
+tl.fromTo(".wagon", {x:900}, {x:-900, duration: 5});
+
+const imgs = gsap.utils.toArray(".skewElem");
+imgs.forEach(img => {gsap.to(img,
+  {scrollTrigger: {
+    trigger: img,
+  scrub: 1},
+    transform: "scale(1.1)"},
+  )});
+
 
 //const layers = gsap.utils.toArray(".layer");
 //layers.forEach(layer => {
