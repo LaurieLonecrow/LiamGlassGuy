@@ -2,7 +2,18 @@ body {
   margin: 0;
   font-family: 'Ranchers', cursive;
   font-family: 'Baloo Da 2', cursive;
+  background-color: #00FFFF;
+  width: 100vw;
+
 }
+
+.header-logo .liam-header{
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 5vw;
+  align-content: center;
+}
+
 
 /* Navbar */
 
@@ -15,7 +26,9 @@ body {
   background: transparent;
   text-decoration: none;
   -webkit-transform-origin: left top;
-  /*-webkit-transform:rotate(-90deg) translateX(-100%);*/
+  -webkit-moz-transform-origin: left top;
+  -webkit-ms-transform-origin: left top;
+  -webkit-o-transform-origin: left top;
   z-index: 50;
   opacity: 1;
 }
@@ -50,7 +63,7 @@ ul.nav li {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   top: 0;
   left: 0;
   background-color: rgb(0,0,0);
@@ -92,9 +105,18 @@ ul.nav li {
 
 .pSection {
   padding: 3% 27%;
-  height: 550px;
-  position: static;
+  /*height: 550px;*/
+  /*position: static;*/
   background-color: #00FFFF;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .baselayer {
@@ -111,23 +133,21 @@ position: absolute;
 
 .pContent {
   position: relative;
-  background-color: #00FFFF;
-}
-
-.gallery {
-  padding-top: 5em;
+  background-color: transparent;
 }
 
 .container {
   width: 100%;
   height: 170px;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: transparent;
 }
 
 .wagon {
   height: auto;
-  width: 50%;
+  width: 60%;
   max-width: 250px;
 }
 
@@ -140,22 +160,60 @@ position: absolute;
   display: flex;
   flex-wrap: wrap;
   padding: 0 3%;
-}
+  padding-top: 20%;
+  background: linear-gradient(217deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
+   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);
+  }
+
 .column {
   flex: 25%;
   max-width: 25%;
   padding: 0 3%;
+  z-index: 2;
 }
 
 .column img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+  padding-bottom: 150px;
+  filter: brightness(1);
 }
 
-@media screen and (max-width: 600px) {
+.column img:hover {
+  filter: brightness(1.1);
+}
+
+.clouds {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.cloud {
+  padding: 150px 0;
+}
+.stagger {
+  transform: translateX(500px);
+}
+
+.clouds-1 {
+  transform: translate(50px, 50px);
+}
+
+.clouds-2 {
+  transform: rotateX(180deg);
+margin-top: 50px;
+}
+
+
+
+@media screen and (max-width: 700px) {
   .column {
-    flex: 100%;
-    max-width: 100%;
+    flex: 40%;
+    max-width: 40%;
+  }
+  .pSection {
+    padding: 50% 25%;
   }
 }
