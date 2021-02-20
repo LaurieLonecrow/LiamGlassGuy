@@ -1,9 +1,122 @@
 body {
   margin: 0;
+  font-family: 'Ranchers', cursive;
+  font-family: 'Baloo Da 2', cursive;
+  background-color: #00FFFF;
+  width: 100vw;
+
 }
 
-.load {
+.header-logo .liam-header{
+  box-sizing: border-box;
+  width: 100vw;
+  padding: 5vw;
+  align-content: center;
+}
 
+
+/* Navbar */
+
+.main-nav {
+  vertical-align: middle;
+  display: inline-block;
+  width:10vh;
+  height:45px;
+  position:fixed;
+  background: transparent;
+  text-decoration: none;
+  -webkit-transform-origin: left top;
+  -webkit-moz-transform-origin: left top;
+  -webkit-ms-transform-origin: left top;
+  -webkit-o-transform-origin: left top;
+  z-index: 50;
+  opacity: 1;
+}
+
+.main-nav-guy img {
+  position: absolute;
+  z-index: 52;
+}
+
+.main-nav-guy img:hover {
+  transform: rotate(-15deg) translate(-10%);
+}
+
+ul.nav li {
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 1rem;
+  float: left;
+  list-style-type: none;
+  height:100%;
+  line-height:45px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 44px;
+  font-family: "Ranchers", cursive;
+}
+
+/* PopUp Menu */
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 18px;
+  text-decoration: none;
+  font-size: 80px;
+  font-family: "Ranchers", cursive;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/* Header Image */
+
+.pSection {
+  padding: 3% 27%;
+  /*height: 550px;*/
+  /*position: static;*/
+  background-color: #00FFFF;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .baselayer {
@@ -13,28 +126,94 @@ position: absolute;
 
 .layer {
   padding: 2% 0;
-
 position: absolute;
 }
 
-.pSection {
-  padding: 3% 27%;
-  height: 550px;
-  position: static;
-  background-color: #00FFFF;
-}
+/* Image Gallery */
 
 .pContent {
   position: relative;
-  background-color: #000000;
+  background-color: transparent;
 }
 
-.gallery {
-  padding-top: 5em;
+.container {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.wagon {
+  height: auto;
+  width: 60%;
+  max-width: 250px;
 }
 
 .skewElem {
-  max-width: 25%;
   height: auto;
   padding: 2em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3%;
+  padding-top: 20%;
+  background: linear-gradient(217deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
+   linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);
+  }
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 3%;
+  z-index: 2;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  padding-bottom: 150px;
+  filter: brightness(1);
+}
+
+.column img:hover {
+  filter: brightness(1.1);
+}
+
+.clouds {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
+.cloud {
+  padding: 150px 0;
+}
+.stagger {
+  transform: translateX(500px);
+}
+
+.clouds-1 {
+  transform: translate(50px, 50px);
+}
+
+.clouds-2 {
+  transform: rotateX(180deg);
+margin-top: 50px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .column {
+    flex: 40%;
+    max-width: 40%;
+  }
+  .pSection {
+    padding: 50% 25%;
+  }
 }
