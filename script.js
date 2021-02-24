@@ -1,15 +1,15 @@
 gsap.registerPlugin(ScrollTrigger);
 console.clear();
 
-gsap.fromTo(".layer",
-{transform: "scale(.1)", opacity:0},
-{transform: "scale(1.2)", opacity:1, duration: 8, ease: "bounce"});
-gsap.fromTo(".baselayer",
-{opacity:0, transform: "scale(.1)"},
-{opacity:1, transform: "scale(1.2)", duration: 8, ease: "bounce"});
-gsap.fromTo(".main-nav",
-{opacity:0, transform: "scale(.1)"},
-{opacity:1, transform: "scale(1.2)", delay: 8, duration: 1});
+// gsap.fromTo(".layer",
+// {transform: "scale(.1)", opacity:0},
+// {transform: "scale(1.2)", opacity:1, duration: 8, ease: "bounce"});
+// gsap.fromTo(".baselayer",
+// {opacity:0, transform: "scale(.1)"},
+// {opacity:1, transform: "scale(1.2)", duration: 8, ease: "bounce"});
+// gsap.fromTo(".main-nav",
+// {opacity:0, transform: "scale(.1)"},
+// {opacity:1, transform: "scale(1.2)", delay: 2, duration: 1});
 
 
 //gsap.fromTo(".bright",
@@ -40,7 +40,7 @@ gsap.fromTo(".main-nav",
 
 var tl = gsap.timeline({
   scrollTrigger:{
-  trigger: ".main-nav",
+  trigger: ".header-logo",
   start: "top top",
   scrub: 1,
   pin: true,
