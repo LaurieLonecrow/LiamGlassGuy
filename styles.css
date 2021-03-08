@@ -104,7 +104,7 @@ ul.nav li {
 /* Header Image */
 
 .pSection {
-  padding: 3% 27%;
+  /* padding: 3% 27%; */
   /*height: 550px;*/
   /*position: static;*/
   background-color: #00FFFF;
@@ -149,37 +149,24 @@ position: absolute;
   max-width: 15vw;
 }
 
-.skewElem {
-  height: auto;
-  padding: 2em;
-}
-
 .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 3%;
-  padding-top: 20%;
   background: linear-gradient(217deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
    linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
     linear-gradient(336deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%);
   }
 
-.column {
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 3%;
+.col {
   z-index: 2;
 }
 
-.column img {
+.col img {
   margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+  width: 70%;
   padding-bottom: 150px;
   filter: brightness(1);
 }
 
-.column img:hover {
+.col img:hover {
   filter: brightness(1.1);
 }
 
@@ -206,15 +193,11 @@ margin-top: 50px;
 
 
 
-@media screen and (max-width: 700px) {
-  .column {
-    flex: 40%;
-    max-width: 40%;
+@media screen and (max-width: 600px) {
+  .page {
+    flex: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
-  .pSection {
-    padding: 50% 25%;
-  }
-  .cloud {
-    padding: 0;
-  }
+
 }
