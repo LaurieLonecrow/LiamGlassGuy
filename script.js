@@ -13,9 +13,9 @@ console.clear();
 
 
 //gsap.fromTo(".bright",
-  //{webkitFilter: "brightness(1)", filter: "brightness(1)" },
-  //{
-  //  duration: .25,
+//{webkitFilter: "brightness(1)", filter: "brightness(1)" },
+//{
+//  duration: .25,
 //     webkitFilter: "brightness(2)",
 //     filter: "brightness(2)",
 //     yoyo: true,
@@ -39,38 +39,40 @@ console.clear();
 // });
 
 var tl = gsap.timeline({
-  scrollTrigger:{
-  trigger: ".header-logo",
-  start: "top top",
-  scrub: 1,
-  pin: true,
-  pinSpacing: false,
-}});
+  scrollTrigger: {
+    trigger: ".header-logo",
+    start: "top top",
+    scrub: 1,
+    pin: true,
+    pinSpacing: false,
+  }
+});
 
-tl.fromTo(".wagon", {x:900}, {x:-50, duration: 25});
+tl.fromTo(".wagon", {
+  x: 900
+}, {
+  x: -50,
+  duration: 25
+});
 
-tl.fromTo(".pContent", {yPercent: 0},{
-  yPercent: -1, ease: "circ"});
+tl.fromTo(".pContent", {
+  yPercent: 0
+}, {
+  yPercent: -1,
+  ease: "circ"
+});
 
-
-
-const imgs = gsap.utils.toArray(".skewElem");
-imgs.forEach(img => {gsap.to(img,
-  {scrollTrigger: {
-    trigger: img,
-  scrub: 1
-},
-    transform: "scale(1.1)"},
-  )});
 
 const clouds = gsap.utils.toArray(".cloud");
-clouds.forEach(cloud => {gsap.to(cloud,
-  {scrollTrigger:{
-    trigger: ".cloud-1",
-    scrub: 1
-  },
-    transform: "translate(20px, -200px)"},
-)});
+clouds.forEach(cloud => {
+  gsap.to(cloud, {
+    scrollTrigger: {
+      trigger: ".cloud-2",
+      scrub: 1
+    },
+    transform: "translate(20px, -200px)"
+  }, )
+});
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
