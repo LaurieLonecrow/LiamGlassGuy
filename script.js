@@ -1,5 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
-console.clear();
+const glass = document.querySelectorAll('.col img');
+
+const overlay = function() {
+  for (let i = 0; i < glass.length; i++) {
+    glass.forEach.classList.add('.overlay-content');
+  }
+};
+
+
 
 // gsap.fromTo(".layer",
 // {transform: "scale(.1)", opacity:0},
@@ -81,6 +89,8 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+
 //const layers = gsap.utils.toArray(".layer");
 //layers.forEach(layer => {
 //tl.fromTo(layer, {opacity: 1.0, transform: "scale(1)"},
