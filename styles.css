@@ -1,3 +1,8 @@
+* {
+  transition: .3s;
+  box-sizing: border-box;
+
+}
 
 body {
   margin: 0;
@@ -5,7 +10,6 @@ body {
   font-family: 'Baloo Da 2', cursive;
   background-color: #00FFFF;
   width: 100vw;
-box-sizing: border-box;
 }
 
 .header-logo .liam-header{
@@ -162,16 +166,19 @@ position: absolute;
 
 .col img {
   margin-top: 8px;
+  margin-bottom: 50px;
   height: 350px;
   width: 400px;
   object-fit: cover;
   /* width: 70%; */
-  padding-bottom: 50px;
   filter: brightness(1);
+  border-radius: 2%;
 }
 
 .col img:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.2);
+  /* border-radius: 50%; */
+  transform: translateY(-5px);
 }
 
 .clouds {

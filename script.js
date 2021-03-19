@@ -1,12 +1,13 @@
 gsap.registerPlugin(ScrollTrigger);
+
+
 const glass = document.querySelectorAll('.col img');
 
 const overlay = function() {
   for (let i = 0; i < glass.length; i++) {
-    glass.forEach.classList.add('.overlay-content');
+    glass[i].classList.add('overlay-content');
   }
 };
-
 
 
 // gsap.fromTo(".layer",
