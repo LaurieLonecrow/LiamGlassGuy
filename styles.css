@@ -158,9 +158,11 @@ ul.nav li {
   position: absolute;
   z-index: 1;
 }
+
 .cloud {
   padding: 150px 0;
 }
+
 .stagger {
   transform: translateX(500px);
 }
