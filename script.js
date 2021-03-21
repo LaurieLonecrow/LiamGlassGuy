@@ -52,7 +52,7 @@ var tl = gsap.timeline({
     trigger: ".header-logo",
     start: "top top",
     scrub: 1,
-    pin: true,
+    pin: false,
     pinSpacing: false,
   }
 });
