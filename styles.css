@@ -176,7 +176,14 @@ ul.nav li {
 margin-top: 50px;
 }
 
-
+/* Lightbox */
+/* .slide {
+  display: none;
+}
+*/
+.slide-image {
+  width: 70%;
+}
 
 @media screen and (max-width: 600px) {
 body {

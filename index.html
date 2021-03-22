@@ -16,6 +16,7 @@
 
 <body>
 
+
   <span class="main-nav main-nav-guy" onmouseover="openNav()" onclick="openNav()">
     <img src="images/logos/head.png" style="width: 100px; height: 100px" alt="smoking-guy">
   </span>
@@ -29,7 +30,7 @@
     </ul>
   </div>
 
-  <div class="header-logo" id="loading">
+  <div class="header-logo">
     <img class="cloud-1" src="images/logos/cloud.png" alt="white-puffy-clouds">
     <img class="liam-header" src="images/logos/liamheader.png" alt="liam-the-glass-guy">
     <img class="cloud-2 stagger" src="images/logos/cloud.png" alt="white-puffy-clouds">
@@ -56,12 +57,12 @@
 
 
 
-    <div class="row" id="gallery" data-bs-toggle="modal" data-bs-target=”#exampleModal”>
+    <div class="row">
       <div class="col text-center">
-        <img class="float-end" src="images/glass/liamglass5.jpg" data-bs-target=”#carouselExample” data-slide-to="0" alt="glass-bong">
-        <img class="" src="images/glass/liamglass3.jpg" data-bs-target=”#carouselExample” data-slide-to="1" alt="glass-bong">
-        <img class="float-end" src="images/glass/liamglass2.jpg" data-bs-target=”#carouselExample” data-slide-to="2" alt="glass-bong">
-        <img class="" src="images/glass/liamglass4.jpg" data-bs-target=”#carouselExample” data-slide-to="3" alt="glass-bong">
+        <img onclick="openLightbox()" class="float-end" src="images/glass/liamglass5.jpg" alt="glass-bong">
+        <img class="" src="images/glass/liamglass3.jpg" alt="glass-bong">
+        <img class="float-end" src="images/glass/liamglass2.jpg" alt="glass-bong">
+        <img class="" src="images/glass/liamglass4.jpg" alt="glass-bong">
         <img class="float-end" src="images/glass/liamglass1.PNG" alt="glass-bong">
         <img class="" src="images/glass/liamglass6.jpg" alt="glass-bong">
         <img class="float-end" src="images/glass/liamglass7.jpg" alt="glass-bong">
@@ -101,6 +102,16 @@
 
   </div>
 
+  <div id="lightbox" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeLightbox()">&times;</a>
+    <div class="overlay-content">
+      <div class="slide">
+        <img class="slide-image" src="images/glass/liamglass5.jpg" alt="pipes-are-tight">
+
+      </div>
+
+    </div>
+  </div>
 
 
 
@@ -126,7 +137,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
-  <script type="text/javascript" src="load.js"></script>
+  <script type="text/javascript" src="modal.js"></script>
 
 </body>
 

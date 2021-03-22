@@ -1,15 +1,6 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-const glass = document.querySelectorAll('.col img');
-
-const overlay = function() {
-  for (let i = 0; i < glass.length; i++) {
-    glass[i].classList.add('overlay-content');
-  }
-};
-
-
 var tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".header-logo",
