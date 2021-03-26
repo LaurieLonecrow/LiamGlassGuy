@@ -126,6 +126,7 @@ ul.nav li {
 
 .wagon {
   max-width: 15vw;
+  display: block;
 }
 
 .row {
@@ -136,10 +137,10 @@ ul.nav li {
 
 .col {
   z-index: 2;
+  line-height: 0;
 }
 
 .col img {
-  margin-top: 8px;
   margin-bottom: 50px;
   height: 350px;
   width: 400px;
