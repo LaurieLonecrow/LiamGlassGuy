@@ -122,6 +122,8 @@ ul.nav li {
   flex-wrap: wrap;
   overflow: hidden;
   background-color: transparent;
+  padding-bottom: 5px;
+
 }
 
 .wagon {
