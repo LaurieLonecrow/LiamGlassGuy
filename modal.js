@@ -7,24 +7,28 @@ const slides = document.getElementById('slides');
 const imgs = document.querySelectorAll('#slide-show');
 
 
-function appendSlide() {
-  slides.innerHTML = "";
-  imgs.forEach(function(img, i) {
-    const imgSrc = imgs[i].currentSrc;
-    const imgAlt = imgs[i].alt;
-    const newSlide = `<div id="" class="slide new-slide">
-      <img id="slideImage" class="slide-image" src=${imgSrc} alt=${imgAlt}>
-    </div>`;
-    slides.insertAdjacentHTML('afterbegin', newSlide)
-  });
-};
 
 
 
-function openLightbox() {
+
+function openLightbox(ele) {
   document.getElementById('lightbox').style.width = "100%";
-  appendSlide();
+  const alt = ele.alt;
 
+  function appendSlide() {
+    slides.innerHTML = "";
+    imgs.forEach(function(img, i) {
+      const imgSrc = imgs[i].attributes.src.textContent;
+      const imgAlt = imgs[i].alt;
+      const newSlide = `<div id="" class="slide new-slide">
+        <img id="slideImage" class="slide-image" src=${imgSrc} alt=${imgAlt}>
+      </div>`;
+      if (alt === imgAlt) {
+        slides.insertAdjacentHTML('afterbegin', newSlide)
+      };
+    });
+  };
+  appendSlide();
 };
 
 
