@@ -6,10 +6,14 @@
 
 body {
   margin: 0;
+  background: linear-gradient( rgba(0,255,255,1) 50%, rgba(0,255,0,1), rgba(254,124,36,1));
   font-family: 'Ranchers', cursive;
   font-family: 'Baloo Da 2', cursive;
-  background-color: #00FFFF;
-  width: 100vw;
+  /* background-color: #00FFFF; */
+  width: 100%;
+  height: 100%;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
 }
 
 .header-logo .liam-header{
@@ -113,11 +117,13 @@ ul.nav li {
 .pContent {
   position: relative;
   background-color: transparent;
+  min-height: 100%;
+  max-width: 100vw;
 }
 
 .wagon-container {
   width: 100%;
-  height: 170px;
+  /* height: 170px; */
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
@@ -132,9 +138,9 @@ ul.nav li {
 }
 
 .row {
-  background: linear-gradient(180deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
-   linear-gradient(127deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
-    linear-gradient(336deg, rgba(254,124,36,1), rgba(255,0,0,0) 70.71%);
+  /* background: linear-gradient(180deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
+   linear-gradient(180deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
+   linear-gradient(180deg, rgba(254,124,36,1), rgba(255,0,0,0) 80.71%), */
   }
 
 .col {
@@ -191,6 +197,10 @@ margin-top: 50px;
   width: 50%;
 }
 
+.hidden {
+  display: contents;
+  opacity: 0;
+}
 
 @media screen and (max-width: 600px) {
 body {

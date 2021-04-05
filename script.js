@@ -1,7 +1,7 @@
 gsap.registerPlugin(ScrollTrigger);
 
 
-var tl = gsap.timeline({
+let tl = gsap.timeline({
   scrollTrigger: {
     trigger: ".header-logo",
     start: "top top",
@@ -17,7 +17,15 @@ tl.fromTo(".wagon", {
   x: -50,
 });
 
+
 tl.fromTo(".cloud-1", {
+  scrollTrigger: {
+    trigger: ".cloud-1",
+    start: "top top",
+    scrub: 1,
+    pin: false,
+    pinSpacing: false,
+  },
   transform: "translate(100px, 10px)",
 }, {
   transform: "translate(-100px, -5px)",

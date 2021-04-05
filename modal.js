@@ -2,12 +2,9 @@
 
 const glass = document.querySelectorAll('.col img');
 const pipes = document.getElementById('slide-show').alt = "pipes";
-const bongs = document.getElementById('slide-show').alt = "bong";
+const bongs = document.getElementById('slide-show').alt = "bongs";
 const slides = document.getElementById('slides');
 const imgs = document.querySelectorAll('#slide-show');
-
-
-
 
 
 
