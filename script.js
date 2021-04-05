@@ -14,7 +14,7 @@ let tl = gsap.timeline({
 tl.fromTo(".wagon", {
   x: 900
 }, {
-  x: -50,
+  x: -10,
 });
 
 
