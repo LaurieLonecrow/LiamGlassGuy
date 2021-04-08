@@ -149,7 +149,7 @@ ul.nav li {
 }
 
 .col img {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   height: 350px;
   width: 400px;
   object-fit: cover;
@@ -210,7 +210,7 @@ body {
   }
 
   .slide-image {
-    width: 65%;
+    width: 55%;
   }
 }
 
