@@ -169,10 +169,15 @@ ul.nav li {
 
 .image-title {
   position: absolute;
-top: 50%;
-left: 15%;
+top: 0px;
+bottom: 0px;
+left: 0px;
+right: 0px;
+margin: auto;
+width: 400px;
 color: #fff;
-font-size: 3rem;
+font-family: 'Ranchers', cursive;
+font-size: 4rem;
 z-index: 2;
 opacity: 0;
 }
