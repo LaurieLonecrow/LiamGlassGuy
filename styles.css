@@ -148,6 +148,7 @@ ul.nav li {
 }
 
 .col img {
+  position: relative;
   height: 350px;
   width: 400px;
   margin: 2rem;
@@ -160,6 +161,24 @@ ul.nav li {
   filter: brightness(1.2);
   /* border-radius: 50%; */
   transform: translateY(-5px);
+}
+
+.image-trigger {
+  position: relative;
+}
+
+.image-title {
+  position: absolute;
+top: 50%;
+left: 15%;
+color: #fff;
+font-size: 3rem;
+z-index: 2;
+opacity: 0;
+}
+
+.image-title:hover {
+opacity: 1;
 }
 
 .clouds {
