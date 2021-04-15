@@ -234,6 +234,10 @@ body {
   .slide-image {
     width: 55%;
   }
+
+  .image-title{
+    opacity: 1;
+  }
 }
 
 /* Loading Image
