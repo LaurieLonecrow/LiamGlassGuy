@@ -159,7 +159,7 @@ ul.nav li {
 
 .col img:hover {
   filter: brightness(1.2);
-  /* border-radius: 50%; */
+  border-radius: 50%;
   transform: translateY(-5px);
 }
 
@@ -168,16 +168,18 @@ ul.nav li {
 }
 
 .image-title {
-  position: absolute;
-top: 0px;
-bottom: 0px;
+position: absolute;
+display: fit-content;
+top: 50%;
+bottom: 50%;
 left: 0px;
 right: 0px;
 margin: auto;
+height: 50px;
 width: 400px;
 color: #fff;
 font-family: 'Ranchers', cursive;
-font-size: 4rem;
+font-size: 3rem;
 z-index: 2;
 opacity: 0;
 }
@@ -235,9 +237,7 @@ body {
     width: 55%;
   }
 
-  .image-title{
-    opacity: 1;
-  }
+
 }
 
 /* Loading Image
