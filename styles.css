@@ -180,6 +180,7 @@ width: 400px;
 color: #fff;
 font-family: 'Ranchers', cursive;
 font-size: 3rem;
+letter-spacing: .2rem;
 z-index: 2;
 opacity: 0;
 }
