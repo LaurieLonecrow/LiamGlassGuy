@@ -157,7 +157,7 @@ ul.nav li {
   border-radius: 2%;
 }
 
-.col img:hover {
+ .col img:hover {
   filter: brightness(1.2);
   border-radius: 50%;
   transform: translateY(-5px);

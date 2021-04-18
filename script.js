@@ -11,12 +11,19 @@ let tl = gsap.timeline({
   }
 });
 
+
 tl.fromTo(".wagon", {
   x: 900
 }, {
   x: -10,
 });
 
+tl.fromTo(".pContent", {
+  yPercent: 0
+}, {
+  yPercent: -20,
+  ease: "circ"
+});
 
 tl.fromTo(".cloud-1", {
   scrollTrigger: {
@@ -36,12 +43,7 @@ tl.fromTo(".cloud-2", {
 }, {
   transform: "translate(700px, -5px)",
 });
-// tl.fromTo(".pContent", {
-//   yPercent: 0
-// }, {
-//   yPercent: -1,
-//   ease: "circ"
-// });
+
 
 
 const clouds = gsap.utils.toArray(".cloud");
