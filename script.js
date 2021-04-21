@@ -21,7 +21,7 @@ tl.fromTo(".wagon", {
 tl.fromTo(".pContent", {
   yPercent: 0
 }, {
-  yPercent: -20,
+  yPercent: -10,
   ease: "circ"
 });
 

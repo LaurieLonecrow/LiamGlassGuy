@@ -148,8 +148,8 @@ ul.nav li {
 
 .col img {
   position: relative;
-  height: 350px;
-  width: 400px;
+  height: 550px;
+  width: 600px;
   margin: 2rem;
   object-fit: cover;
   filter: brightness(1);
