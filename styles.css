@@ -222,8 +222,7 @@ margin-top: 50px;
 }
 
 .hidden {
-  display: contents;
-  opacity: 0;
+  display: none;
 }
 
 @media screen and (max-width: 600px) {
