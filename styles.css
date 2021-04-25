@@ -114,7 +114,6 @@ ul.nav li {
 /* Image Gallery */
 
 .pContent {
-  /* position: relative; */
   background-color: transparent;
   min-height: 100%;
   max-width: 100vw;
@@ -134,12 +133,6 @@ ul.nav li {
   max-width: 20vw;
   display: block;
 }
-
-.row {
-  /* background: linear-gradient(180deg, rgba(0,255,255,1), rgba(0,0,255,0) 70.71%),
-   linear-gradient(180deg, rgba(0,255,0,1), rgba(0,255,0,0) 70.71%),
-   linear-gradient(180deg, rgba(254,124,36,1), rgba(255,0,0,0) 80.71%), */
-  }
 
 .col {
   z-index: 2;
@@ -180,7 +173,6 @@ color: #fff;
 font-family: 'Ranchers', cursive;
 font-size: 3rem;
 letter-spacing: .2rem;
-/* z-index: 2; */
 opacity: 0;
 }
 
@@ -191,7 +183,6 @@ opacity: 1;
 .clouds {
   overflow: hidden;
   position: absolute;
-  /* z-index: 1; */
 }
 
 .cloud {
@@ -227,7 +218,7 @@ margin-top: 50px;
 
 @media screen and (max-width: 600px) {
 body {
-    flex: 100%;
+    flex; 100%;
     max-width: 100%;
     overflow-x: hidden;
   }
