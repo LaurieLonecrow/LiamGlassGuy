@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
   background: linear-gradient( rgba(0,255,255,1) 50%, rgba(0,255,0,1), rgba(254,124,36,1));
   font-family: 'Ranchers', cursive;
   font-family: 'Baloo Da 2', cursive;
@@ -112,6 +113,10 @@ ul.nav li {
 }
 
 /* Image Gallery */
+
+.row {
+margin-top: 100px;
+}
 
 .pContent {
   background-color: transparent;
