@@ -115,7 +115,6 @@ ul.nav li {
 /* Image Gallery */
 
 .row {
-margin-top: 100px;
 }
 
 .pContent {
@@ -126,7 +125,7 @@ margin-top: 100px;
 
 .wagon-container {
   width: 100%;
-  height: 170px;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
