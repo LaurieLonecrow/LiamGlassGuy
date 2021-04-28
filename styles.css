@@ -135,6 +135,7 @@ ul.nav li {
 
 .wagon {
   max-width: 20vw;
+  max-height: inherit;
   display: block;
 }
 
