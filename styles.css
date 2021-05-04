@@ -139,23 +139,19 @@ ul.nav li {
   display: block;
 }
 
-.col {
-  z-index: 2;
-  line-height: 0;
-}
 
-.col img {
+.images {
   position: relative;
-  height: 550px;
-  width: 600px;
+  max-height: 400px;
+  max-width: 400px;
   margin: 2rem;
   object-fit: cover;
   filter: brightness(1);
   border-radius: 2%;
 }
 
- .col img:hover {
-  filter: brightness(1.2);
+ .images:hover {
+  filter: brightness(1.4);
   border-radius: 50%;
   transform: translateY(-5px);
 }
