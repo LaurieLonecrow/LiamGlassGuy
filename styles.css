@@ -139,8 +139,8 @@ ul.nav li {
 
 .images {
   position: relative;
-  max-height: 600px;
-  max-width: 600px;
+  max-height: 400px;
+  max-width: 400px;
   margin: 2rem;
   object-fit: cover;
   filter: brightness(1);
