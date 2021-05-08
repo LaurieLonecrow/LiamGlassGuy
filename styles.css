@@ -136,12 +136,15 @@ ul.nav li {
   display: block;
 }
 
+.image-trigger {
+  position: relative;
+}
 
 .images {
   position: relative;
   max-height: 400px;
-  max-width: 400px;
-  margin: 2rem;
+  width: 400px;
+  margin-top: 5rem;
   object-fit: cover;
   filter: brightness(1);
   border-radius: 2%;
@@ -151,10 +154,6 @@ ul.nav li {
   filter: brightness(1.4);
   border-radius: 50%;
   transform: translateY(-5px);
-}
-
-.image-trigger {
-  position: relative;
 }
 
 .image-title {
@@ -172,6 +171,7 @@ font-family: 'Ranchers', cursive;
 font-size: 3rem;
 letter-spacing: .2rem;
 opacity: 0;
+text-align: center;
 }
 
 .image-title:hover {
