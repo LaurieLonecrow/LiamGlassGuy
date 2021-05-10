@@ -132,9 +132,11 @@ ul.nav li {
 }
 
 .wagon {
+  width: 100%;
   max-width: 20vw;
-  height: auto;
+  /* height: auto; */
   display: block;
+  align-self: flex-start;
 }
 
 .image-trigger {
