@@ -21,6 +21,7 @@ body {
   width: 100vw;
   padding: 5vw;
   align-content: center;
+  overflow: hidden;
 }
 
 
@@ -125,14 +126,14 @@ ul.nav li {
   height: auto;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: transparent;
   padding-bottom: 15px;
 }
 
 .wagon {
   max-width: 20vw;
-  /* height: auto; */
+  height: auto;
   display: block;
 }
 

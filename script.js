@@ -41,7 +41,7 @@ tl.fromTo(".cloud-1", {
 tl.fromTo(".cloud-2", {
   transform: "translate(500px, -10px)",
 }, {
-  transform: "translate(700px, -5px)",
+  transform: "translate(700px, -15px)",
 });
 
 
